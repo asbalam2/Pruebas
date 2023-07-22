@@ -1,13 +1,14 @@
 <!DOCTYPE html> 
 <html lang="es"> <!-- lang es un atributo que indica el idioma de nuestra página como en este caso es "es" de español -->
-    <head>
+    <head> <!--conocido como metadatos, aquí van los elementos que no vemos pero son esenciales para que la página funcione-->
+      <title>PaginaDeGatosJEJE</title> <!--Modifica el título del sitio web-->
 
     </head>
     <body> <!-- Aquí va la estructura de nuestro código -->
         <h2>App de gatos</h2> <!--h es una etiqueta para crear un título, el rango va de h1 a h6 siendo h1 el más grande-->
         <main> <!--main se usa para indicar la funcion principal del contenido-->
             <h3>Imágenes de gatos</h3>
-            <p> Ximenna ¿Es correcta la información? necesito una experta en el tema</a></p> <!--p es una etiqueta para crear párrafos en la página web-->
+            <p>¿Es correcta la información? necesito una experta en el tema</a></p> <!--p es una etiqueta para crear párrafos en la página web-->
 
             <a href="#poema-1">Poema 1</a> <!--<a> sirve para crear un enlace interno con destino a un párrafo de la página con el atributo href y # con el destino del párrafo a elegir usando su identidad-->    
             <a href="#poema-2">Poema 2</a>
@@ -15,7 +16,7 @@
             <a href="#poema-4">Poema 4</a>
             <a href="#poema-5">Poema 5</a>
 
-            <br> <!--br hace un salto de línea-->
+            <br> <br> <!--br hace un salto de línea-->
             
             <a href="https://es.wikipedia.org/wiki/Felis_silvestris_catus" target="_blank" rel="noopener noreferrer"><img src="ga.jpg" alt="gato serio"> </a><!--img es una etiqueta para poder agregar una imágen, no necesita etiqueta de cierre,  src es un atributo para agregar la imagen desde el destino de esta, src es de source que significa fuente, alt sirve para dar una descripción a la imagen que aparecerá en caso de que la imágen no se cargue correctamente la, la etiqueta <a> sirve para crear un enlace en un texto y href le da el valor a qué página se va a direccionar, la etiqueta target sirve para que el enlace se abra en una página nueva con el atributo _blank, la etiqueta rel con el atrubuto noopener nos permite prevenir un tipo de ataque llamado tabnabbing en el que la pestaña de origen se reemplaza-->
 
@@ -146,16 +147,27 @@
                                 En otro tiempo estás.
                                 Eres el dueño
                                 de un ámbito cerrado como un sueño.</p>
-                                
-                                <form action="/enviar-respuesta"> <!--<form> crea un formulario,  y action hace que la respuesta enviada se envíe a una dirección del archivo en el servidor establecida-->
-                                <label for="interior"><input id="interior" type="radio" name="interior-exterior"> interior</label> <!-- Con input type= radio el formulario que se crea es de un circulo que se puede seleccionar para una respuesta,  y con label le das la propiedad de que si le das click al texto también se seleccionará la opción-->
-                                <br>
-                                <label for="exterior"><input id="exterior" type="radio" name="interior-exterior"> exterior</label> <!--Con id le das identidad al botón y con for dentro de label le asignas la propiedad del id,  con el atributo name haces que se agrupen los botones de radio y solo se pueda seleccionar uno u otro-->
-                                <br>
-                                <input type="text" placeholder="Color de gato preferido" required> <!--Para que el usuerio ingrese una respuesta de tipo texto y con placeholder se crea una marca de agua el cual es una pista de que se debe de ingresar, on required hacemos que el campo que se debe llenar sea obligatoro-->
-                                <button type="submit"> Enviar <!--Crea un botón de tipo enviar(submit) con el nombre de enviar-->
-                                </button>
-                                </form>
+                                <hr>
+                                <div>
+                                  <form action="respuestas/"> <!--<form> crea un formulario,  y action hace que la respuesta enviada se envíe a una dirección del archivo en el servidor establecida-->
+                                      <p>¿Tu gato prefiere estar en interior o exterior?</p>
+                                  <label for="interior"><input id="interior" type="radio" name="interior-exterior" value="interior"> interior</label> <!-- Con input type= radio el formulario que se crea es de un circulo que se puede seleccionar para una respuesta,  y con label le das la propiedad de que si le das click al texto también se seleccionará la opción-->
+                                  <br>
+                                  <label for="exterior"><input id="exterior" type="radio" name="interior-exterior" value ="exterior"> exterior</label> <!--Con id le das identidad al botón y con for dentro de label le asignas la propiedad del id,  con el atributo name haces que se agrupen los botones de radio y solo se pueda seleccionar uno u otro--> <br>
+                                  <p>Selecciona como es tu gato (Puedes seleccionar mas de dos)</p>
+                                  <label for="energetico"><input id="energetico" type="checkbox" value="energetico">energético</label><br> <!--Con checkbox se crean casillas para palomear-->
+                                  <label for="perezoso"><input id="perezoso" type="checkbox" value="perezoso">perezoso</label><br>
+                                  <label for="enojon"><input id="enojon" type="checkbox" value="enojon">enojón</label><br>
+                                  <label for="carinoso"><input id="carinoso" type="checkbox" value="carinoso">cariñoso</label> <!--Con value le damos un atributo a la rrespuesta seleccionada y así el servidor lo podrá interpretar-->
+                                  <br><br>
+                                  <input type="text" placeholder="Color de gato preferido" required> <!--Para que el usuerio ingrese una respuesta de tipo texto y con placeholder se crea una marca de agua el cual es una pista de que se debe de ingresar, on required hacemos que el campo que se debe llenar sea obligatoro-->
+                                  <button type="submit"> Enviar <!--Crea un botón de tipo enviar(submit) con el nombre de enviar-->
+                                  </button>
+                                  </form>
+                            </div> <!--div es un contenedor que agrupa etiquetas o parte del código que se podrán modificar en css-->
         </main>
+        <footer> <!--Crea un pie de página-->
+            <p><small>Sin derechos de autor</small></p> 
+        </footer>
     </body>
 </html>
