@@ -1,8 +1,8 @@
-
 * {
 font-family: Verdana, Geneva, Tahoma, sans-serif;
+background-color: rgb(125, 255, 255);
 
-} /*Cambia el tipo de fuente de letra*/
+} /* fon-family Cambia el tipo de fuente de letra y background-color cambia el color del fondo*/
 
   h3 {
 
@@ -11,7 +11,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   } /* los cambios se aplicarán a todos los de esa etiqueta*/
 
   .odian-aman {
-    color:orange;
+    color:rgb(214, 142, 8);
     font-size: 23px;
   }
 
@@ -21,4 +21,14 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 
   } /*Cambia el tamaño de las letras*/
 
-  
+  img {
+
+    width: 350px;
+    border-style:dotted;
+    border-color: rgb(98, 0, 128);
+    border-radius: 20px; /*Redondea las esquinas o bordes de la imagen*/
+  } /*Cambia la proporción de la imágen (widh = ancho) border para colocar un borde con color y estilo*/
+
+  h2 {
+    font-size: 40px;
+  }
