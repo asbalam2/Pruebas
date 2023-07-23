@@ -1,0 +1,24 @@
+
+* {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+} /*Cambia el tipo de fuente de letra*/
+
+  h3 {
+
+    color:brown;
+
+  } /* los cambios se aplicarán a todos los de esa etiqueta*/
+
+  .odian-aman {
+    color:orange;
+    font-size: 23px;
+  }
+
+  h2 {
+
+  font-size: 25px;
+
+  } /*Cambia el tamaño de las letras*/
+
+  
